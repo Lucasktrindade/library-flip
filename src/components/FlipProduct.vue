@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <h3>{{item.title}}</h3>
+    <h3>{{item.name}}</h3>
     <p>{{item.description}}</p>
     <p>{{item.price}}</p>
     <button type="button" name="button">Adicionar ao Carrinho</button>

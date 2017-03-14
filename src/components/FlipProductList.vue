@@ -5,11 +5,11 @@
 </template>
 
 <script>
-  import Product from './ProductList.vue';
+  import FlipProduct from './FlipProduct.vue';
 
   export default {
     name: 'flip-product-list',
-    components: { Product }
+    components: { FlipProduct }
   };
 </script>
 
