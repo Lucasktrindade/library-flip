@@ -7,8 +7,7 @@
 
 <script>
   export default {
-    name: 'LibraryMenu',
-    props: ['page']
+    name: 'flip-menu'
   };
 </script>
 

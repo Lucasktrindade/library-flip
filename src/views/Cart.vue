@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import LibraryMenu from '../components/LibraryMenu.vue';
+  import LibraryMenu from '../components/Menu.vue';
 
   export default {
     name: 'Cart',
