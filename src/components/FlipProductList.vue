@@ -1,7 +1,9 @@
 <template>
-  <div class="product-list">
-    <p v-if="loading">Carregando...</p>
-    <flip-product v-for="item in products" :key="item.id" :item="item"></flip-product>
+  <div>
+    <div class="product-list">
+      <p v-if="loading">Carregando...</p>
+      <flip-product v-for="item in products" :key="item.id" :item="item"></flip-product>
+    </div>
   </div>
 </template>
 
@@ -17,11 +19,16 @@
       return {
         loading: true,
         products: [],
+        errorMessage: null,
       }
     },
     mounted (){
-      Promise.resolve(allProducts()).then(data => this.products = data);
-      this.loading = false;
+      allProducts().then((data) => {
+        this.products = data;
+        this.loading = false;
+      }).catch((err) => {
+        console.log(this.err)
+      });
     }
   };
 </script>

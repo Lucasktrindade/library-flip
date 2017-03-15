@@ -1,6 +1,6 @@
 <template>
     <div>
-      <library-menu :cart="false"></library-menu>
+      <library-menu :cartDisplay="false"></library-menu>
       <h1>Carrinho</h1>
     </div>
 </template>
@@ -10,7 +10,7 @@
 
   export default {
     name: 'Cart',
-    components: { LibraryMenu }
+    components: { LibraryMenu },
   };
 </script>
 
