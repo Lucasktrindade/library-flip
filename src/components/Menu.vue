@@ -2,20 +2,20 @@
   <nav>
     <h2>Livraria Flip</h2>
       <router-link to="/cart" v-if="cartDisplay">Carrinho</router-link>
-      <pre>{{ cart }}</pre>
+      <pre>{{ quantityCart }}</pre>
       <router-link to="/home" v-if="homeDisplay">Home</router-link>
   </nav>
 </template>
 
 <script>
-  import { mapState } from 'vuex';
+  import { mapGetters } from 'vuex';
 
   export default {
     name: 'flip-menu',
     computed: {
-      ...mapState({
-        cart: state => state.cart,
-      })
+      ...mapGetters([
+        'quantityCart',
+      ])
     },
     props: {
       cartDisplay: {
