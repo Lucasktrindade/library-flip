@@ -1,6 +1,6 @@
 <template>
   <div>
-    <library-menu></library-menu>
+    <library-menu :home="false"></library-menu>
     <h1>Home Flip</h1>
     <flip-product-list></flip-product-list>
   </div>

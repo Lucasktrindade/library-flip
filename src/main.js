@@ -1,15 +1,13 @@
 import Vue from 'vue';
 import App from './App.vue';
-import VueResource from 'vue-resource';
+import http from './services';
 import router from './router';
-
-Vue.use(VueResource);
+import store from './store';
 
 const app = new Vue({
   el: '#app',
-  http: {
-    root: './',
-  },
+  http,
+  store,
   router,
   render: h => h(App)
 });

@@ -1,6 +1,6 @@
 <template>
     <div>
-      <library-menu></library-menu>
+      <library-menu :cart="false"></library-menu>
       <h1>Carrinho</h1>
     </div>
 </template>
