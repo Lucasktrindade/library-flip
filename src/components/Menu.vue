@@ -1,21 +1,29 @@
 <template>
   <nav>
     <h2>Livraria Flip</h2>
-    <router-link to="/cart" v-if="cart">Carrinho</router-link>
-    <router-link to="/home" v-if="home">Home</router-link>
+      <router-link to="/cart" v-if="cartDisplay">Carrinho</router-link>
+      <pre>{{ quantityCart }}</pre>
+      <router-link to="/home" v-if="homeDisplay">Home</router-link>
   </nav>
 </template>
 
 <script>
+  import { mapGetters } from 'vuex';
+
   export default {
     name: 'flip-menu',
+    computed: {
+      ...mapGetters([
+        'quantityCart',
+      ])
+    },
     props: {
-      cart:{
+      cartDisplay: {
         type: Boolean,
         default: true,
         required: false
       },
-      home:{
+      homeDisplay: {
         type: Boolean,
         default: true,
         required: false
