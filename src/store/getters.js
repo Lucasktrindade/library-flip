@@ -1,5 +1,8 @@
 export default {
 
+  cart: state => {
+    return state.cart;
+  },
   quantityCart: state => {
     return state.cart.products.reduce((total, obj) => { return total + obj.quantity},0);
   },

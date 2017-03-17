@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="cart">
       <library-menu :cartDisplay="false"></library-menu>
       <h1>Carrinho</h1>
       <div v-for="product in cartProducts">
@@ -30,5 +30,10 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .cart{
+    display: block;
+    .cart-product {
+      display: table;
+    }
+  }
 </style>

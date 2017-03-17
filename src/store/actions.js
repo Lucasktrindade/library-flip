@@ -1,4 +1,4 @@
-import { store_data } from '../utils/localStorage.util.js'
+import { storeCart } from '../services/CartService'
 
 export default {
   addToCart({commit, state, getters}, {id, description, price}) {
@@ -14,7 +14,7 @@ export default {
       };
       commit('ADD_ITEM', product);
     }
-    store_data(state.cart, 'cart');
+    storeCart(getters.cart);
   },
 
   removeFromCart({commit, state, getters}, id) {
@@ -30,6 +30,6 @@ export default {
       });
       commit('REMOVE_ITEM', idx);
     }
-    store_data(state.cart, 'cart');
+    storeCart(getters.cart);
   }
 };
