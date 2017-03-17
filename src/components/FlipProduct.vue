@@ -3,7 +3,7 @@
     <h3>{{item.name}}</h3>
     <p>{{item.description}}</p>
     <p>{{item.price}}</p>
-    <button type="button" name="button" @click="addToCart(item.id)">Adicionar ao Carrinho</button>
+    <button type="button" name="button" @click="addToCart(item)">Adicionar ao Carrinho</button>
   </div>
 </template>
 
@@ -13,9 +13,9 @@
   export default {
     name: 'flip-product',
     methods: {
-      ...mapActions({
-        addToCart: 'addCart'
-      }),
+      ...mapActions([
+        'addToCart'
+      ]),
     },
     props: ['item']
   };
