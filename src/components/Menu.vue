@@ -2,7 +2,8 @@
   <nav>
     <h2>Livraria Flip</h2>
       <router-link to="/cart" v-if="cartDisplay">Carrinho</router-link>
-      <pre>{{ quantityCart }}</pre>
+      <pre>Quantidade: {{ quantityCart }}</pre>
+      <pre>Valor Total: {{ totalPrice }}</pre>
       <router-link to="/home" v-if="homeDisplay">Home</router-link>
   </nav>
 </template>
@@ -15,6 +16,7 @@
     computed: {
       ...mapGetters([
         'quantityCart',
+        'totalPrice'
       ])
     },
     props: {
