@@ -14,7 +14,7 @@ export default {
 
 <style>
   @import "../node_modules/normalize.css/normalize.css";
-  
+
   *{
     box-sizing: border-box;
   }
@@ -27,7 +27,7 @@ export default {
     margin-right: auto;
     width: 100%;
   }
-  @media and screen min-width(992px){
+  @media and screen min-width(768px){
     .container {
       width: 97.5%;
     }
