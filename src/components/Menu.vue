@@ -71,15 +71,15 @@
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
         align-self: center;
-      -webkit-flex-basis: 60%;
-      -ms-flex-preferred-size: 60%;
-              flex-basis: 60%;
+      -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
       text-align: center;
     }
     .menu--home, .menu--cart{
-      -webkit-flex-basis: 20%;
-      -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+      -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
     }
     .menu--cart {
       -webkit-box-align: center;
