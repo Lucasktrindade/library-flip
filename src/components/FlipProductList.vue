@@ -34,5 +34,10 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .product-list {
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 </style>

@@ -1,8 +1,8 @@
-import { get_data } from '../utils/localStorage.util.js'
+import { getCart } from '../services/CartService'
 
 export default {
 
-   cart: get_data('cart') || {
+   cart: getCart() || {
      products: [],
      total: 0,
    }

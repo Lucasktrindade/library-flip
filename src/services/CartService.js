@@ -1,7 +1,12 @@
-import { store_data } from '../utils/localStorage.util.js'
+import { store_data, get_data } from '../utils/localstorage.util'
 
 function storeCart(data) {
   store_data(data, 'cart');
 };
 
-export { storeCart }
+
+function getCart() {
+  return get_data('cart');
+};
+
+export { storeCart, getCart }

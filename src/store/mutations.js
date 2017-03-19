@@ -1,5 +1,3 @@
-import { get_data } from '../utils/localStorage.util.js';
-
 export default {
   ADD_ITEM (state, product) {
       state.cart.products.push(product);

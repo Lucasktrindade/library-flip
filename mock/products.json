@@ -2,30 +2,36 @@
 	"id": 1,
 	"name": "Livro A",
 	"description": "Great ever A",
+	"thumb": "http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg",
 	"price": 80
 }, {
 	"id": 2,
 	"name": "Livro B",
 	"description": "Great ever B",
+	"thumb": "http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg",
 	"price": 34
 }, {
 	"id": 3,
 	"name": "Livro C",
 	"description": "Great ever C",
+	"thumb": "http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg",
 	"price": 13
 }, {
 	"id": 4,
 	"name": "Livro D",
 	"description": "Great ever D",
+	"thumb": "http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg",
 	"price": 61
 }, {
 	"id": 5,
 	"name": "Livro E",
 	"description": "Great ever E",
+	"thumb": "http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg",
 	"price": 29
 }, {
 	"id": 6,
 	"name": "Livro F",
 	"description": "Great ever F",
+	"thumb": "http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg",
 	"price": 99
 }]
