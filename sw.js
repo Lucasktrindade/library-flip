@@ -1,4 +1,4 @@
-var cacheName = 'flip-v1';
+var cacheName = 'flip-v2';
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
@@ -6,7 +6,10 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         './index.html',
         './dist/style.css',
-        './dist/build.js'
+        './dist/build.js',
+        './dist/back-arrow-white.png',
+        './dist/icon-red.png',
+        './dist/shopping-cart-white.png'
       ]);
     })
   );
