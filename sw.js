@@ -9,8 +9,7 @@ self.addEventListener('install', function(e) {
         './dist/build.js',
         './dist/back-arrow-white.png',
         './dist/icon-red.png',
-        './dist/shopping-cart-white.png',
-        'http://imagizer.imageshack.us/v2/150x100q90/537/9043ba.jpg'
+        './dist/shopping-cart-white.png'
       ]);
     })
   );
