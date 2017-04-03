@@ -8,6 +8,12 @@
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
       var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        // Be sure to call this code *before* you initialize the web SDK
+
+        // This registers the workers at the root scope, which is allowed by the HTTP header "Service-Worker-Allowed: /"
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/library-flip/' };
+      });
       OneSignal.push(["init", {
         appId: "9c1860cc-af87-4f68-912b-842b9c3e4b43",
         autoRegister: false,
@@ -24,7 +30,7 @@
     <div id="app"></div>
     <script src="./dist/build.js"></script>
     <script>
-      if ('serviceWorker' in navigator) {
+      /*if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js')
         .then(function(reg) {
           // registration worked
@@ -33,7 +39,7 @@
           // registration failed
           console.log('Registration failed with ' + error);
         });
-      }
+      }*/
   </script>
   </body>
 </html>
