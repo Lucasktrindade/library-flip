@@ -1,7 +1,7 @@
 {
   "name": "FlipLibrary",
   "short_name": "FlipLibrary",
-  "start_url": "/",
+  "start_url": "/library-flip/",
   "display": "standalone",
   "gcm_sender_id": "482941778795",
   "background_color": "#3498db",
