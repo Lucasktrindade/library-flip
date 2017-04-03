@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Flip</title>
     <link rel="manifest" href="./manifest.json">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script src="./OneSignalSDKWorker.js"></script>
     <script>
       var OneSignal = window.OneSignal || [];
       OneSignal.push(["init", {
@@ -23,7 +23,7 @@
     <div id="app"></div>
     <script src="./dist/build.js"></script>
     <script>
-      /*if ('serviceWorker' in navigator) {
+      if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js')
         .then(function(reg) {
           // registration worked
@@ -32,7 +32,7 @@
           // registration failed
           console.log('Registration failed with ' + error);
         });
-      }*/
+      }
   </script>
   </body>
 </html>
