@@ -1,9 +1,8 @@
 {
   "name": "FlipLibrary",
   "short_name": "FlipLibrary",
-  "start_url": "/library-flip/",
+  "start_url": "/",
   "display": "standalone",
-  "gcm_sender_id": "482941778795",
   "background_color": "#3498db",
   "description": "Seu e-commerce de livros na palma da sua mão.",
   "icons": [{

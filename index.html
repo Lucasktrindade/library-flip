@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Flip</title>
     <link rel="manifest" href="./manifest.json">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
-    <script>
-      var OneSignal = window.OneSignal || [];
-      OneSignal.push(["init", {
-        appId: "9c1860cc-af87-4f68-912b-842b9c3e4b43",
-        autoRegister: false,
-        notifyButton: {
-          enable: true /* Set to false to hide */
-        }
-      }]);
-    </script>
     <meta name="theme-color" content="#3498db">
     <link rel="stylesheet" href="./dist/style.css">
   </head>
@@ -23,7 +12,7 @@
     <div id="app"></div>
     <script src="./dist/build.js"></script>
     <script>
-      /*if ('serviceWorker' in navigator) {
+      if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js')
         .then(function(reg) {
           // registration worked
@@ -32,7 +21,7 @@
           // registration failed
           console.log('Registration failed with ' + error);
         });
-      }*/
+      }
   </script>
   </body>
 </html>
