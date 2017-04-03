@@ -1,4 +1,4 @@
-var cacheName = 'flip-v3';
+var cacheName = 'flip-v4';
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
